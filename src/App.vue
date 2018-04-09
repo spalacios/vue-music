@@ -1,6 +1,6 @@
 <template lang="pug">
   #app
-    img.logo(src='./assets/podcast-logo.png')
+    img.logo(src='https://spalacios.github.io/vue-music/dist/podcast-logo.png')
     h2 Vue Music by Palacios Santiago {{ baseUrl}}
     select(v-model="selectedCountry")
       option(v-for="country in countries" v-bind:value="country.name.toLowerCase()") {{ country.name }}
