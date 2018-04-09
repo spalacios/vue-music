@@ -6,9 +6,7 @@
       option(v-for="country in countries" v-bind:value="country.name.toLowerCase()") {{ country.name }}
     spinner(v-show="loading")
     ul
-      artist(v-for="artist in artists" v-bind:artist="artist" v-bind:key="artist.mbid")
-      //- li(v-for="artist in artists") {{ artist.name }} 
-       
+      artist(v-for="artist in artists" v-bind:artist="artist" v-bind:key="artist.mbid")       
 </template>
 
 <script >
