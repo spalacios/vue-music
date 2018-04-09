@@ -1,7 +1,7 @@
 <template lang="pug">
   #app
     img.logo(src='./assets/podcast-logo.png')
-    h2 Vue Music by Palacios Santiago
+    h2 Vue Music by Palacios Santiago {{ baseUrl}}
     select(v-model="selectedCountry")
       option(v-for="country in countries" v-bind:value="country.name.toLowerCase()") {{ country.name }}
     spinner(v-show="loading")
@@ -24,7 +24,7 @@ export default {
       artists: [],
       countries : countries.countries,
       selectedCountry: 'argentina',
-      loading: true
+      loading: true,
     }
   },
   methods:{
